@@ -1,0 +1,129 @@
+
+
+
+
+
+
+
+
+
+
+<!-- *** WELCOME START *** -->
+<div class="welcome">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3"><div class="welcome_msg">Where we're Going</div></div>
+			<div class="col-sm-9"><p class="welcome_text">It’s important to build a personal brand because it’s the only thing you’re going to have. Your reputation online, and in the new business world is pretty much the game, so you’ve got to be a good person. You can’t hide anything, and more importantly, you’ve got to be out there at some level.</p></div>
+		</div><!--row -->
+	</div><!--container -->
+</div><!--welcome -->
+<!-- *** WELCOME END *** -->
+
+
+
+
+
+
+<!-- *** PARALLAX START *** -->
+<div class="parallax" style="background-image: url(http://placehold.it/1400x500);">
+	<div class="parallax_over">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="parallax_container">
+						<!--SLIDE CAROUSEL START -->
+							<div class="slidewrap2">
+								<div class="slider">
+									<div class="slide">
+										<!--YOUR FIRST CAROUSEL CONTENT GOES HERE-->
+											<div class="rectangle">
+												<h1>Work with us</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, aperiam magnam eaque harum unde hic consequuntur magni veniam sunt odio nobis doloribus ad vero repellat voluptatem voluptate! Accusantium, odit?</p>
+											</div>
+										<!--YOUR FIRST CAROUSEL CONTENT END HERE-->
+									</div>
+									<div class="slide">
+										<!--YOUR SECOND CAROUSEL CONTENT GOES HERE-->
+											<div class="rectangle">
+												<h1>Keep in touch</h1>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, aperiam magnam eaque harum unde hic consequuntur magni veniam sunt odio nobis doloribus ad vero repellat voluptatem voluptate! Accusantium, odit?</p>
+											</div>
+										<!--YOUR SECOND CAROUSEL CONTENT END HERE-->
+									</div>
+								</div><!--slider-->
+							</div><!--slidewrap-->
+						<!--SLIDE CAROUSEL END -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--parallax over-->
+</div>
+<!-- *** PARALLAX END *** -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// RESPONSIVE MENU
+
+$(document).ready(function(){
+"use strict";
+var menu_trigger = $('.menu_trigger');
+var areamenu = $('.mobileAreaMenu');
+var all_li =$('.mobileAreaMenu li');
+
+$(menu_trigger).click(function() {
+
+
+if ($(menu_trigger).hasClass('active')){
+
+			$(areamenu).slideUp(200,function(){
+				$(areamenu).css("display","");
+				$(menu_trigger).removeClass("active");
+			});
+
+			} else {
+				$(areamenu).slideDown(200,function(){
+					//
+				});
+
+				$(menu_trigger).addClass("active");
+			}
+});
+
+$('.mobileAreaMenu a').click(function(){
+
+	$(areamenu).slideUp(200);
+	$(menu_trigger).removeClass("active");
+});
+});
+</script>

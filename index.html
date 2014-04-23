@@ -1,0 +1,131 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+<!-- REVOLUTION SLIDER CSS SETTINGS -->
+<link href="css/revolution_slider.css" rel="stylesheet" type="text/css" />
+
+    <!-- endbuild -->
+  </head>
+  <body ng-app="lvipApp" id="home">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+<div id="top"></div>
+
+<div id="header">
+<div activateMobile class="responsive_nav white_lines">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="mobileAreaMenu">
+          <ul>
+         <li class="active"><a href="/">Home</a></li>
+        <li><a href="/#/about">About</a></li>
+        <li><a href="/#/services">Services</a></li>
+        <li><a href="/#/prices">Pricing</a></li>
+        <li><a href="/#/tickets">Tickets</a></li>
+        
+        <li><a href="/#/contact">Contact</a></li>
+          </ul>
+      </div><!--mobileAreaMenu-->
+      </div><!--col-sm-12-->
+    </div><!--row-->
+  </div>
+</div><!--responsive_nav-->
+
+<div class="row-fluid">
+    <div class="logo_container">
+      <a activateLogo href="#top"><div id="logo"><img src="images/logo.png" alt=""></div></a>
+    </div>
+    <a href="#responsive_nav" revo class="menu_trigger"><i class="fa_icon icon-reorder icon-2x"></i></a>
+
+    <div class="main_nav">
+      <ul>
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/#/about">About</a></li>
+        <li><a href="/#/services">Services</a></li>
+        <li><a href="/#/prices">Pricing</a></li>
+        <li><a href="/#/tickets">Tickets</a></li>
+        <li><a href="/#/pictures">Pictures</a></li>
+        <li><a href="/#/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div><!--row-fluid-->
+</div><!--header-->
+    <!-- Add your site or application content here -->
+    <div ng-view=""></div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/directives/onePageNav.js"></script>
+        <script src="scripts/directives/carousel-slider.js"></script>
+        <script src="scripts/directives/revo.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+
+<script type="text/javascript" src="scripts/jquery-plugins/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="scripts/jquery-plugins/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="scripts/jquery-plugins/carousel.js"></script>
+<script type="text/javascript" src="scripts/jquery-plugins/retina.js"></script>
+<script type="text/javascript" src="scripts/jquery-plugins/jquery.nav.js"></script>
+<script type="text/javascript" src="scripts/jquery-plugins/modernizr.custom.js"></script>
+<script type="text/javascript" src="scripts/jquery-plugins/jquery.isotope.min.js"></script>
+
+ <!-- JQUERY REVOLUTION SLIDER  -->
+<script type="text/javascript" src="scripts/jquery-plugins/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-plugins/jquery.themepunch.revolution.js"></script>
+<script type="text/javascript" src="scripts/jquery-plugins/custom.js"></script>
+
+        <!-- endbuild -->
+</body>
+</html>
